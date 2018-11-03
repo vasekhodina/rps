@@ -77,6 +77,9 @@ def test_wrong_play_results_in_repeated_question():
                         check=True, input='fake\nrock\n')
     assert cp.stdout.count('rock, paper or scissors? ') == 2
 
+def test_fail():
+    assert False
+
 #@pytest.fixture
 #def fake_input_scissors(monkeypatch):
 #    monkeypatch.setattr('builtins.input', input_faked_scissors)
